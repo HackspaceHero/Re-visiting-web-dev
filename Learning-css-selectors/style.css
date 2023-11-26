@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+li:hover{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #5b5959;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+div.container{
+height: 90vh;
+width: 100vw;
+background: red;
+display: grid;
+/* grid-template-rows: 30vh 30vh 30vh; this will give me three rows of 30 vh */
+/* grid-template-columns: 30vh 30vh 30vh 30vh 30vh 30vh;  this will give me two columns of */ /* 1fr mean 1fraction of the entire width available*/
+grid-template-columns: repeat(3, 1fr); /* this gives me 6 columns pretty much covering the whole space 1 fr means 100% of the whole space it being divided into 6 parts*/
+grid-template-rows: 133px repeat(2, 1fr);
+column-gap: 12px;
+row-gap: 12px;
+}
+
+div.item{  /* height: 10vh;
+    width: 10vh;
+   */
+    background: aqua;
+
+}
+
+div.item1{
+    grid-column-start:1;
+    grid-column-end: 3;
+}

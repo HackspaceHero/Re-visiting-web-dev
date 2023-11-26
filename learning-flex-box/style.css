@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    border: red 1px solid;
+    height: 45vh;
+}
+
+.container .item{
+    margin: 0.5rem;
+    border: black 1px solid;
+    height: 50px;
+    width: 50px;
+}
+
+.child1 {
+    order: 3;
+}
